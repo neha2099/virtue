@@ -1,0 +1,310 @@
+.project1-page {
+  font-family: 'Arial', sans-serif;
+  color: #4b3e2a;
+  line-height: 1.6;
+}
+
+/* Hero / Banner */
+.project1-hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(75, 62, 42, 0.6); /* dark overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+}
+/* Highlights Section */
+.project1-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+/* Individual Highlight Card */
+.highlight {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.highlight:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Style */
+.highlight h2 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Paragraph Style */
+.highlight p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Highlights / Key Info */
+.project1-highlights {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 60px 20px;
+}
+
+.highlight {
+  flex: 1 1 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+.highlight h2 {
+  color: #f5d76e;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.highlight p {
+  color: #4b3e2a;
+}
+
+/* Floor Plans */
+/* Floor Plans Section */
+.project1-floorplans {
+  padding: 40px 20px;
+}
+
+.project1-floorplans h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Grid Layout */
+.floorplan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 10px 0;
+}
+
+/* Card */
+.floorplan-card {
+  background: #fff;
+  border: olive;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover */
+.floorplan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.floorplan-card img {
+  width: 700px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* Image Hover Effect */
+.floorplan-card img:hover {
+  transform: scale(1.05);
+}
+
+/* Text */
+.floorplan-card p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* FIXED — border must include width and style */
+  
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.amenity-card {
+  background: #fff;
+  text-align: center;
+  border: 2px solid #f5d76e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.amenity-card img {
+   width: 100%;
+  display: block;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.amenity-card p{
+    font-size: 20px;
+    font-size: large;
+    font: bold;
+}
+/* Hover Effect */
+.amenity-card img:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Enquire Form */
+/* Enquire Section */
+.project1-enquire {
+  padding: 40px 20px;
+  background: #fafafa;
+  border-radius: 12px;
+  margin-top: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.project1-enquire h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Form */
+.enquire-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Service Options (Radio Buttons) */
+.service-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.service-options label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.service-options input[type="radio"]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Remove default focus for label-click */
+.service-options label:focus-within {
+  outline: none;
+  box-shadow: none;
+}
+/* Buttons Section */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-back {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.btn-back:hover {
+  background: #cacaca;
+  transform: translateY(-3px);
+}
+
+.btn-next {
+  background: #f5d76e;
+  color: #333;
+  font-weight: 600;
+}
+
+.btn-next:hover {
+  background: #eecb56;
+  transform: translateY(-3px);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .project1-highlights {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .floorplan-grid, .amenities-grid {
+    grid-template-columns: 1fr;
+  }
+}
